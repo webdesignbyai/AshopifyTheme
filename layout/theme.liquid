@@ -32,7 +32,7 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-    window.theme = window.theme || {};
+    window.theme = window.Shopify.designMode || {};
     theme.routes = {
       home: "{{ routes.root_url }}",
       cart: "{{ routes.cart_url | append: '.js' }}",
